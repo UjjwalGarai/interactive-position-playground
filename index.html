@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Position Lines -->
+        <div class="line line-horizontal top-line"></div>
+        <div class="line line-horizontal bottom-line"></div>
+        <div class="line line-vertical left-line"></div>
+        <div class="line line-vertical right-line"></div>
+
+        <!-- Positioned Box -->
+        <div class="position" id="position-display">Static</div>
+    </div>
+    <div class="control-pannel">
+        <div class="postion-control-pannel">
+            <div class="position-control-pannel-des">
+                <p>Please select your favorite Web language:</p>
+
+            </div>
+            <div class="position-control-pannel-buttons">
+                <div class="static">
+                    <input type="radio" id="static" name="fav_position" value="Static" checked>
+                    <label for="static">Static</label>
+                </div>
+                <div class="relative">
+                    <input type="radio" id="relative" name="fav_position" value="Relative">
+                    <label for="relative">Relative</label>
+                </div>
+                <div class="absolute">
+                    <input type="radio" id="absolute" name="fav_position" value="Absolute">
+                    <label for="absolute">Absolute</label>
+                </div>
+                <div class="fixed">
+                    <input type="radio" id="fixed" name="fav_position" value="Fixed">
+                    <label for="fixed">Fixed</label>
+                </div>
+                <div class="sticky">
+                    <input type="radio" id="sticky" name="fav_position" value="Sticky">
+                    <label for="sticky">Sticky</label>
+
+                </div>
+            </div>
+        </div>
+        <div class="range-control">
+            <div class="top-control">
+                <label for="top-range">Top</label>
+                <input type="range" name="top-range" id="top-range" min="0" max="200" value="50" step="2"
+                    oninput="document.getElementById('top-output').innerHTML = this.value + 'px'">
+                <output id="top-output">50px</output>
+            </div>
+            <div class="left-control">
+                <label for="left-range">Left</label>
+                <input type="range" name="left-range" id="left-range" min="0" max="200" value="50" step="2"
+                    oninput="document.getElementById('left-output').innerHTML = this.value + 'px'">
+                <output id="left-output">50px</output>
+            </div>
+            <div class="right-control">
+                <label for="right-range">Right</label>
+                <input type="range" name="right-range" id="right-range" min="0" max="200" value="50" step="2"
+                    oninput="document.getElementById('right-output').innerHTML = this.value + 'px'">
+                <output id="right-output">50px</output>
+            </div>
+            <div class="bottom-control">
+                <label for="right-range">Right</label>
+                <input type="range" name="bottom-range" id="bottom-range" min="0" max="200" value="50" step="2"
+                    oninput="document.getElementById('bottom-output').innerHTML = this.value + 'px'">
+                <output id="bottom-output">50px</output>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</html>
